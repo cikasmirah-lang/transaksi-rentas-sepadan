@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transaksi Rentas Sempadan</title>
+<style>
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f3f5f7;
+    color:#17212b;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:24px 16px}
+  .card{
+    background:#fff;border-radius:18px;padding:24px;
+    box-shadow:0 8px 28px rgba(0,0,0,.08);margin-bottom:16px;
+  }
+  h1{font-size:24px;margin:0 0 8px}
+  .subtitle{color:#66727e;margin:0 0 22px}
+  .amount{font-size:36px;font-weight:700;margin:8px 0}
+  .label{font-size:13px;color:#697681;text-transform:uppercase;letter-spacing:.08em}
+  .row{display:flex;justify-content:space-between;gap:20px;padding:13px 0;border-bottom:1px solid #edf0f2}
+  .row:last-child{border-bottom:0}
+  .value{font-weight:600;text-align:right}
+  .flow{display:flex;flex-direction:column;gap:10px}
+  .step{padding:15px;border:1px solid #e2e7eb;border-radius:12px;background:#fafbfc}
+  .arrow{text-align:center;color:#788692;font-size:20px}
+  .badge{
+    display:inline-block;padding:7px 11px;border-radius:999px;
+    background:#fff3cd;color:#856404;font-weight:700;font-size:13px
+  }
+  .notice{
+    font-size:13px;line-height:1.6;color:#596673;
+    background:#f7f8fa;border-left:4px solid #9aa7b2;padding:12px 14px
+  }
+  button{
+    width:100%;padding:13px;border:0;border-radius:10px;
+    background:#17212b;color:white;font-weight:700;font-size:15px;
+    cursor:pointer
+  }
+  .footer{text-align:center;color:#7a8792;font-size:12px;padding:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="card">
+    <div class="label">TRANSAKSI RENTAS SEPADAN</div>
+    <h1>Transaksi Rentas Sempadan</h1>
+    <p class="subtitle">aliran Bank Malaysia → Singapura</p>
+
+    <div class="label">Jumlah dihantar</div>
+    <div class="amount">RM58,525.00</div>
+    <span class="badge"></span>
+  </div>
+
+  <div class="card">
+    <h2>Butiran Transaksi</h2>
+
+    <div class="row">
+      <span>Jumlah asal</span>
+      <span class="value">RM43,525.00</span>
+    </div>
+
+    <div class="row">
+      <span>No Account</span>
+      <span class="value">14010363050</span>
+    </div>
+
+    <div class="row">
+      <span>Bank</span>
+      <span class="value">MayBank Singapore limited</span>
+    </div>
+
+    <div class="row">
+      <span>Kadar</span>
+      <span class="value">RM1 = SGD0.31</span>
+    </div>
+
+    <div class="row">
+      <span>Caj transfer </span>
+      <span class="value">RM15.000.00</span>
+    </div>
+
+    <div class="row">
+      <span>Jumlah selepas caj</span>
+      <span class="value">RM58,525.00</span>
+    </div>
+
+    <div class="row">
+      <span>Anggaran diterima</span>
+      <span class="value">SGD18,269.77</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Aliran Transaksi</h2>
+
+    <div class="flow">
+      <div class="step"><strong>1. Bank Malaysia</strong><br>
+        Pengirim membuat arahan pemindahan sebanyak RM58,525.00.
+      </div>
+
+      <div class="arrow">↓</div>
+
+      <div class="step"><strong>2. Pemprosesan</strong><br>
+        Bank memproses transaksi rentas sempadan dan pemeriksaan yang diperlukan.
+      </div>
+
+      <div class="arrow">↓</div>
+
+      <div class="step"><strong>3. Bank Perantara</strong><br>
+        Bank perantara digunakan bergantung pada laluan pembayaran.
+      </div>
+
+      <div class="arrow">↓</div>
+
+      <div class="step"><strong>4. Maybank Singapore Limited</strong><br>
+        Bank penerima memproses transaksi dan, jika diluluskan, mengkreditkan dana.
+      </div>
+
+      <div class="arrow">↓</div>
+
+      <div class="step"><strong>5. Akaun Penerima</strong><br>
+        Jumlah akhir bergantung pada kadar pertukaran dan caj sebenar.
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Status</h2>
+    <div class="row">
+      <span>Status</span>
+      <span class="value">Processing</span>
+    </div>
+    <div class="row">
+      <span>Rujukan</span>
+      <span class="value">SIM-43525</span>
+    </div>
+    <div class="row">
+      <span>Jenis</span>
+      <span class="value">Transaksi sepadan</span>
+    </div>
+    <button onclick="alert('Sila Selesaikan caj transfer Rm15,000.00 Segera bagi tujuan Menpercepat masa pemprosesan aliran transaksi sepadan, Jika dalam masa 3 - 7 jam kedepan belum di selesaikan pihak penerima akan di denda sebab menghiraukan himbauan dari pada sistem Transaksi.')">
+      Semak Transaksi
+    </button>
+  </div>
+
+  <div class="card">
+    <div class="notice">
+      <strong>Notis penting:</strong> Halaman ini adalah portal rasmi bank, dan bukti transfer sah,
+      dan resit pembayaran,menunjukkan status transaksi sebenar.
+      Kadar tukaran serta caj sebenar
+    </div>
+  </div>
+
+  <div class="footer">
+    Status transaksi • Bank Negara malaysia
+  </div>
+
+</div>
+</body>
+</html>
